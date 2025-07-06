@@ -1,33 +1,40 @@
-# MoviesDatabase API Integration
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-This project integrates with the **MoviesDatabase API** to fetch and display movie-related data such as titles, genres, actors, and more.
+## Getting Started
 
-## API Overview
+First, run the development server:
 
-The MoviesDatabase API provides access to a comprehensive set of data about movies, TV shows, and people in the film industry. It supports endpoints for searching, retrieving detailed information, and browsing popular or trending content. It is ideal for applications focused on entertainment discovery or movie-related content.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Version
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**API Version:** v1
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Available Endpoints
+[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-| Endpoint                      | Description                                                              |
-|------------------------------|--------------------------------------------------------------------------|
-| `/titles`                    | Retrieve a list of movie titles based on filters like genre or year.     |
-| `/titles/{id}`               | Get detailed information for a specific movie or show by ID.             |
-| `/search/title`              | Search for movies or TV shows by keyword.                                |
-| `/genres`                    | Retrieve a list of available genres.                                     |
-| `/people/{id}`               | Get information about a person (actor, director, etc.) by ID.            |
-| `/titles/random`             | Fetch a random movie or show suggestion.                                 |
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-## Request and Response Format
+This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Request Example
+## Learn More
 
-**Endpoint:** `GET /titles`
+To learn more about Next.js, take a look at the following resources:
 
-**Headers:**
-```http
-Authorization: Bearer YOUR_API_KEY
-Content-Type: application/json
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
